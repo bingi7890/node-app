@@ -1,8 +1,8 @@
-pipeline {
-  agent linux-agent
+#pipeline {
+#  agent linux-agent
     
-  tools {nodejs "nodes 16.2.0"}
-    
+#  tools {nodejs "nodes 16.2.0"}
+node{    
   stages {    
     stage('Git') {
        steps {
