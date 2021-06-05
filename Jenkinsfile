@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent linux-agent
     
   tools {nodejs "nodes 16.2.0"}
     
