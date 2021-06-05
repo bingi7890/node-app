@@ -10,7 +10,6 @@ pipeline {
     } 
     stage('Build') {
       steps {
-        #sh 'npm install && npm start'
         sh 'docker build -t node-app'
       }
     } 
