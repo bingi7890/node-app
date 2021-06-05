@@ -15,7 +15,9 @@ pipeline {
        stage('Build') {
           steps {
              
-             sh 'docker build -f Dockerfile -t proj:sample-node-app /var/lib/dokcer/overlay2'
+             sh 'docker build -f Dockerfile -t proj:sample-node-app .'
+             sh 'docker login -u docvishwa -p Vishwa@1234$'
+             sh 'docker push sample-node-app'
              
           }
        } 
