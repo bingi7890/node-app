@@ -15,9 +15,10 @@ pipeline {
        stage('Build') {
           steps {
              
+            
              sh 'docker build -f Dockerfile -t sample-node-app .'
-             sh 'docker login -u docvishwa -p Vishwa@1234$ docker.io'
-             sh 'docker push sample-node-app'
+             sh 'docker login -u docvishwa -p Vishwa@1234$'
+             sh 'docker push docvishwa/sample-node-app:sample-node-app'
              
           }
        } 
