@@ -18,3 +18,5 @@ COPY . .
 
 EXPOSE 9090
 CMD [ "node", "server.js" ]
+
+RUN npm start
