@@ -4,7 +4,7 @@
 const express = require('express');
 
 // Constants
-const PORT = 9090;
+const PORT = 8080;
 const HOST = 'localhost';
 
 // App
