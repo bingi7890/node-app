@@ -17,14 +17,14 @@ pipeline {
              
             
              sh 'docker build -f Dockerfile -t sample-node-app .'
-             sh 'docker login -u docvishwa -p Vishwa@1234$'
-             sh 'docker push sample-node-app'
+           //  sh 'docker login -u docvishwa -p Vishwa@1234$'
+           //  sh 'docker push sample-node-app'
              
           }
        } 
         stage('deployment'){
             steps{
-                sh 'docker run --name nodeapp -p 8080:9090 sample-node-app'
+                sh 'docker run --name nodeapp -p 8080:8080 sample-node-app'
             }
         }
                 
