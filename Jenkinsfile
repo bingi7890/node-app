@@ -14,8 +14,8 @@ pipeline {
        } 
        stage('Build') {
           steps {
-             sh 'cd /etc/Jenkins/workspace/sample-node-app'
-             sh 'docker build -ft sample-node-app'
+             
+             sh 'docker build -it ./sample-node-app'
              
           }
        } 
