@@ -16,6 +16,7 @@ pipeline {
           steps {
              
              sh 'docker build -f Dockerfile -t proj:sample-node-app .'
+             sh 'docker run --name nodeapp -p 8080:9090 sample-node-app'
              
           }
        } 
