@@ -14,8 +14,9 @@ pipeline {
        } 
        stage('Build') {
           steps {
+             sh 'cd /etc/Jenkins/workspace/sample-node-app'
              sh 'docker build -t node-app'
-             sh 'docker build --help'
+             
           }
        } 
     }
