@@ -12,7 +12,7 @@ pipeline {
     } 
     stage('Build') {
       steps {
-        sh 'npm install && npm'
+        sh 'npm install && npm start'
          sh 'docker build node-app'
       }
     } 
