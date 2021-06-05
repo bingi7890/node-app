@@ -1,5 +1,5 @@
 pipeline {
-  agent linux-agent
+  agent {linux-agent}
   tools {nodejs "nodes 16.2.0"}   
   stages {    
     stage('Git') {
