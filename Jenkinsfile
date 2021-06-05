@@ -24,7 +24,7 @@ pipeline {
        } 
         stage('deployment'){
             steps{
-                sh 'docker run --name nodeapp -p 8080:9090 sample-node-app'
+                sh 'docker run --name sample-node-app -p 8080:9090 sample-node-app'
             }
         }
                 
