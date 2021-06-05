@@ -1,8 +1,5 @@
 pipeline {
    agent linux-agent
-   tools{
-      maven "maven" 
-   }
    stages {
       stage('Checkout external') {
          steps {
