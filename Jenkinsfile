@@ -17,7 +17,7 @@ pipeline {
              
              sh 'docker build -f Dockerfile -t proj:sample-node-app .'
              sh 'docker login -u docvishwa -p Vishwa@1234$'
-             sh 'docker push sample-node-app'
+             sh 'docker push proj:sample-node-app'
              
           }
        } 
