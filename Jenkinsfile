@@ -15,7 +15,7 @@ pipeline {
        stage('Build') {
           steps {
              
-             sh 'docker build -it ./sample-node-app'
+             sh 'docker build -f Dockerfile -t proj:sample-node-app .'
              
           }
        } 
