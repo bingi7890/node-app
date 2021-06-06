@@ -19,4 +19,9 @@ COPY . .
 
 EXPOSE 8080
 CMD [ "node", "server.js" ]
+
+RUN rm -rf node_modules
+RUN rm package-lock.json yarn.lock
+RUN npm cache clear --force
+RUN npm install
 RUN npm start
